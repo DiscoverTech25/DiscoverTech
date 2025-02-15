@@ -1,85 +1,208 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+/nonprofit-website
+    /index.html
+    /about.html
+    /contact.html
+    /volunteer.html
+    /assets/
+        /images/
+            - photo1.jpg
+            - photo2.jpg
+        /css/
+            - style.css
+        /js/
+            - script.js
+    /README.md
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px '.SF NS'; color: #1b1f22; -webkit-text-stroke: #1b1f22; background-color: #ffffff}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px '.SF NS'; color: #1b1f22; -webkit-text-stroke: #1b1f22; background-color: #ffffff; min-height: 15.0px}
-    span.s1 {font-kerning: none}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Profit Organization</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<p class="p1"><span class="s1">import React from 'react';</span></p>
-<p class="p1"><span class="s1">import { Card, CardContent } from '@/components/ui/card';</span></p>
-<p class="p1"><span class="s1">import { Button } from '@/components/ui/button';</span></p>
-<p class="p1"><span class="s1">import { Input } from '@/components/ui/input';</span></p>
-<p class="p1"><span class="s1">import { Textarea } from '@/components/ui/textarea';</span></p>
-<p class="p1"><span class="s1">import { useState } from 'react';</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">const Home = () =&gt; (</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section className='p-10 bg-green-100 min-h-screen'&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h1 className='text-4xl font-bold text-green-800 mb-4'&gt;Welcome to Our STEM Education Initiative!&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p className='text-lg text-green-700'&gt;Empowering the next generation with free engineering and coding classes.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
-<p class="p1"><span class="s1">);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">const AboutUs = () =&gt; (</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section className='p-10 bg-white min-h-screen'&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 className='text-3xl font-bold text-green-800 mb-4'&gt;About Us&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p className='text-lg text-gray-700'&gt;We are a non-profit organization dedicated to teaching STEM and engineering classes to children. Our mission is to make coding accessible and fun for young learners, and to foster a love for science, technology, engineering, and mathematics. Through hands-on projects and interactive lessons, we aim to inspire the next generation of innovators and problem-solvers. We believe in creating an inclusive and supportive learning environment where every child, regardless of background, has the opportunity to explore and develop critical skills that will shape their future. By empowering students with the tools to succeed in an increasingly tech-driven world, we are helping them build a foundation for academic success and lifelong learning.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
-<p class="p1"><span class="s1">);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">const Locations = () =&gt; (</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section className='p-10 bg-green-50 min-h-screen'&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 className='text-3xl font-bold text-green-800 mb-4'&gt;Locations&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p className='text-lg text-gray-700'&gt;We currently offer classes at Mitchell Hope Library. Check back for updates on new locations!&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
-<p class="p1"><span class="s1">);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">const Volunteering = () =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const [formData, setFormData] = useState({ name: '', email: '', message: '' });</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const handleChange = (e) =&gt; setFormData({ ...formData, [e.target.name]: e.target.value });</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const handleSubmit = (e) =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>e.preventDefault();</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>alert('Thank you for signing up to volunteer!');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>};</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>return (</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section className='p-10 bg-white min-h-screen'&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h2 className='text-3xl font-bold text-green-800 mb-4'&gt;Volunteering&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p className='text-lg text-gray-700'&gt;Join us in making a difference! Sign up to volunteer today.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;form onSubmit={handleSubmit} className='mt-6'&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;Input type='text' name='name' placeholder='Your Name' value={formData.name} onChange={handleChange} className='mb-4' required /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;Input type='email' name='email' placeholder='Your Email' value={formData.email} onChange={handleChange} className='mb-4' required /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;Textarea name='message' placeholder='Why do you want to volunteer?' value={formData.message} onChange={handleChange} className='mb-4' required /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;Button type='submit'&gt;Submit&lt;/Button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/form&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>);</span></p>
-<p class="p1"><span class="s1">};</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">const Contact = () =&gt; (</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section className='p-10 bg-green-50 min-h-screen'&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 className='text-3xl font-bold text-green-800 mb-4'&gt;Contact Us&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p className='text-lg text-gray-700'&gt;Have questions or want to learn more? Reach out to us!&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
-<p class="p1"><span class="s1">);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">const App = () =&gt; (</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div className='font-sans text-gray-800'&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;Home /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;AboutUs /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;Locations /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;Volunteering /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;Contact /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">export default App;</span></p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Welcome to Our Non-Profit!</h1>
+        <p>We are dedicated to teaching STEM, Engineering, and Python to young minds in local libraries.</p>
+    </section>
+
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>Our mission is to empower children through STEM education, focusing on coding and problem-solving skills.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Non-Profit Organization. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Non-Profit Organization</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>Our organization is committed to providing free STEM education, especially coding and engineering, to children in libraries across the community.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Non-Profit Organization. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Non-Profit Organization</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to get involved, feel free to reach out to us!</p>
+        <p>Email: <a href="mailto:info@nonprofit.org">info@nonprofit.org</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Non-Profit Organization. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer with Us - Non-Profit Organization</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="volunteer">
+        <h2>Volunteer with Us</h2>
+        <p>We are always looking for passionate individuals to help teach kids coding and STEM concepts! Please sign up below:</p>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Why do you want to volunteer?</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Non-Profit Organization. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2c6e49;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    background-color: #82b77d;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#mission {
+    padding: 20px;
+    background-color: #e1e1e1;
+}
+
+#about-us {
+    padding: 20px;
+}
+
+#volunteer form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #2c6e49;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+<img src="assets/images/hero.jpg" alt="Hero Image">
