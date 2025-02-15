@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px '.SF NS'; color: #1b1f22; -webkit-text-stroke: #1b1f22; background-color: #ffffff}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px '.SF NS'; color: #1b1f22; -webkit-text-stroke: #1b1f22; background-color: #ffffff; min-height: 15.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">import React from 'react';</span></p>
+<p class="p1"><span class="s1">import { Card, CardContent } from '@/components/ui/card';</span></p>
+<p class="p1"><span class="s1">import { Button } from '@/components/ui/button';</span></p>
+<p class="p1"><span class="s1">import { Input } from '@/components/ui/input';</span></p>
+<p class="p1"><span class="s1">import { Textarea } from '@/components/ui/textarea';</span></p>
+<p class="p1"><span class="s1">import { useState } from 'react';</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">const Home = () =&gt; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section className='p-10 bg-green-100 min-h-screen'&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h1 className='text-4xl font-bold text-green-800 mb-4'&gt;Welcome to Our STEM Education Initiative&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p className='text-lg text-green-700'&gt;Empowering the next generation with free engineering and coding classes.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1">);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">const AboutUs = () =&gt; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section className='p-10 bg-white min-h-screen'&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 className='text-3xl font-bold text-green-800 mb-4'&gt;About Us&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p className='text-lg text-gray-700'&gt;We are dedicated to teaching STEM and engineering classes, including an Introduction to Python, at libraries for free. Our mission is to make coding accessible and fun for young learners.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1">);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">const Locations = () =&gt; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section className='p-10 bg-green-50 min-h-screen'&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 className='text-3xl font-bold text-green-800 mb-4'&gt;Locations&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p className='text-lg text-gray-700'&gt;We currently offer classes at various library locations. Check back for updates!&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1">);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">const Volunteering = () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const [formData, setFormData] = useState({ name: '', email: '', message: '' });</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const handleChange = (e) =&gt; setFormData({ ...formData, [e.target.name]: e.target.value });</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const handleSubmit = (e) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>e.preventDefault();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>alert('Thank you for signing up to volunteer!');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>return (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section className='p-10 bg-white min-h-screen'&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h2 className='text-3xl font-bold text-green-800 mb-4'&gt;Volunteering&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p className='text-lg text-gray-700'&gt;Join us in making a difference! Sign up to volunteer today.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;form onSubmit={handleSubmit} className='mt-6'&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;Input type='text' name='name' placeholder='Your Name' value={formData.name} onChange={handleChange} className='mb-4' required /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;Input type='email' name='email' placeholder='Your Email' value={formData.email} onChange={handleChange} className='mb-4' required /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;Textarea name='message' placeholder='Why do you want to volunteer?' value={formData.message} onChange={handleChange} className='mb-4' required /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;Button type='submit'&gt;Submit&lt;/Button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/form&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>);</span></p>
+<p class="p1"><span class="s1">};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">const Contact = () =&gt; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section className='p-10 bg-green-50 min-h-screen'&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 className='text-3xl font-bold text-green-800 mb-4'&gt;Contact Us&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p className='text-lg text-gray-700'&gt;Have questions or want to learn more? Reach out to us!&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1">);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">const App = () =&gt; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div className='font-sans text-gray-800'&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;Home /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;AboutUs /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;Locations /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;Volunteering /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;Contact /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">export default App;</span></p>
+</body>
+</html>
